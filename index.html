@@ -329,16 +329,33 @@
                 font-size: 16px;
             }
             .top-bar {
-                justify-content: flex-start;
-                overflow-x: auto;
-                padding: 10px;
-            }
-            .top-bar::-webkit-scrollbar {
-                display: none;
-            }
-            .slider-container {
-                height: 45vh;
-            }
+            justify-content: flex-start;
+            overflow-x: auto;
+            padding: 10px;
+        }
+        .top-bar::-webkit-scrollbar {
+            display: none;
+        }
+        
+        /* === YAHAN CHANGES KARNI HAIN === */
+        .slider-container {
+            height: auto; /* 45vh ko hata kar auto kar diya */
+            aspect-ratio: 16 / 9; /* Exact 16:9 ratio set kar diya */
+        }
+
+        /* Banner chota hone ki wajah se arrows aur dots ko thora resize kar diya taake overlap na hon */
+        .arrow {
+            font-size: 18px;
+            padding: 6px 10px;
+        }
+        .dots-container {
+            bottom: 10px;
+        }
+        .dot {
+            width: 8px;
+            height: 8px;
+        }
+    
         }
     </style>
 </head>
